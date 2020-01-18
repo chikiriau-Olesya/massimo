@@ -94,15 +94,13 @@ h2 {
     margin-left: 5vw;
     overflow-x: hidden;
 }
-.aboutus__info h2 {
-    margin-top: 20vw;
+.aboutus__info__title{
     font-weight: bold;
     font-size: 72px;
     margin-bottom: 11vw;
+    margin-top: 20vw;
 }
-
-.aboutus__info p {
-    font-weight: 200;
+.aboutus__info__p {
     font-size: 14px;
     margin-bottom: 7vw;
 }
@@ -112,7 +110,7 @@ hr {
     height: 3px;
     background-color: black;
 }
-h3 {
+.aboutus__authors__title {
     margin-top: 12vw;
     font-weight: bold;
     font-size: 36px;
@@ -122,43 +120,19 @@ h3 {
     flex-direction: row;
     overflow-x: scroll;
 }
-.aboutus__authors__we__block img {
+.aboutus__authors__we li img {
     width: 221px;
-    margin-left: 11vw;
-    margin-top: 21vw;
+    height: 221px;
 }
-.aboutus__authors__we__block {
-    position: relative;
-}
-.aboutus__authors__we__block__shape {
-    position: absolute;
-    background-color: #E5011C;
-}
-.aboutus__authors__we__block_:nth-child(1) .aboutus__authors__we__block__shape {
-    width: 87px;
-    height: 87px;
-    margin-top: 10vw;
-    margin-left: 40vw;
-}
-.aboutus__authors__we__block:nth-child(2) .aboutus__authors__we__block__shape {
-    width: 87px;
-    height: 87px;
-    border-radius: 50%;
-}
-.aboutus__authors__we__block__name {
-    position: absolute;
+.aboutus__authors__we li h4 {
     font-size: 24px;
-    font-weight: bold;
-    color: white;
+    line-height:  96%;
+    color: #FFFFFF;
 }
-.aboutus__authors__we__block:nth-of-type(even) .aboutus__authors__we__block__name {
-    margin-top: -71vw;
-    margin-left: 10vw;
-}
-
-.aboutus__authors__we__block:nth-of-type(odd) .aboutus__authors__we__block__name {
-    margin-top: -14vw;
-    margin-left: 10vw;
+.aboutus__authors__we__first__square {
+    width: 28vw;
+    height: 28vw;
+    background: #E5011C;
 }
 
 
@@ -182,5 +156,4 @@ h3 {
 }
 .footer__list__item__link:hover {
     text-decoration: underline;
-    font-weight: 700;
 }
