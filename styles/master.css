@@ -25,9 +25,9 @@ h2 {
     width: 27px;
     height: 3px;
     background-color: black;
-    margin-top: 4vw;
     position: fixed;
-    right: 0;
+    right: 4vw;
+    top: 6vw;
 }
 .hero__header::before,
 .hero__header::after {
@@ -119,6 +119,10 @@ hr {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    margin-top: 48px;
+}
+.aboutus__authors__we li {
+  margin-right: 58px;
 }
 .aboutus__authors__we li img {
     width: 221px;
@@ -129,9 +133,51 @@ hr {
     line-height:  96%;
     color: #FFFFFF;
 }
-.aboutus__authors__we__first__square {
+.aboutus__authors__we__first,
+.aboutus__authors__we__second,
+.aboutus__authors__we__third,
+.aboutus__authors__we__fourth,
+.aboutus__authors__we__fifth {
+    position: relative;
+}
+.aboutus__authors__we__first div,
+.aboutus__authors__we__third div,
+.aboutus__authors__we__fifth div {
+    right: 0;
+}
+.aboutus__authors__we__second div,
+.aboutus__authors__we__fourth div {
+    right: 0;
+    bottom: 0;
+}
+.aboutus__authors__we__first div,
+.aboutus__authors__we__second div,
+.aboutus__authors__we__third div,
+.aboutus__authors__we__fourth div,
+.aboutus__authors__we__fifth div {
+    position: absolute;
+}
+.aboutus__authors__we__first__square,
+.aboutus__authors__we__second__curcle {
     width: 28vw;
     height: 28vw;
+    background: #E5011C;
+}
+.aboutus__authors__we__second__curcle {
+    border-radius: 50%;
+}
+.aboutus__authors__we__third__tr {
+
+}
+.aboutus__authors__we__fourth__par {
+    width: 32vw;
+    height: 28vw;
+    background: #E5011C;
+}
+.aboutus__authors__we__fifth__cur {
+    width: 32vw;
+    height: 28vw;
+    border-radius: 50%;
     background: #E5011C;
 }
 
