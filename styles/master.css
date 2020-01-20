@@ -119,10 +119,12 @@ hr {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-    margin-top: 48px;
+    padding-top: 18vw;
+    padding-bottom: 18vw;
 }
 .aboutus__authors__we li {
   margin-right: 58px;
+  position: relative;
 }
 .aboutus__authors__we li img {
     width: 221px;
@@ -132,53 +134,50 @@ hr {
     font-size: 24px;
     line-height:  96%;
     color: #FFFFFF;
+    font-weight: bold;
+    position: absolute;
+    bottom: -1%;
+    left: -1%;
 }
-.aboutus__authors__we__first,
-.aboutus__authors__we__second,
-.aboutus__authors__we__third,
-.aboutus__authors__we__fourth,
-.aboutus__authors__we__fifth {
-    position: relative;
+.aboutus__authors__we__first h4,
+.aboutus__authors__we__third h4,
+.aboutus__authors__we__fifth h4 {
+    bottom: -1%;
+    left: -1%;
 }
-.aboutus__authors__we__first div,
-.aboutus__authors__we__third div,
-.aboutus__authors__we__fifth div {
-    right: 0;
+.aboutus__authors__we__second h4,
+.aboutus__authors__we__fourth h4 {
+    top: -1%;
+    left: -1%;
 }
-.aboutus__authors__we__second div,
-.aboutus__authors__we__fourth div {
-    right: 0;
-    bottom: 0;
-}
-.aboutus__authors__we__first div,
-.aboutus__authors__we__second div,
-.aboutus__authors__we__third div,
-.aboutus__authors__we__fourth div,
-.aboutus__authors__we__fifth div {
+.aboutus__authors__we li div {
+    width: 28vw;
+    height: 28vw;
+    background-color: #E5011C;
     position: absolute;
 }
 .aboutus__authors__we__first__square,
-.aboutus__authors__we__second__curcle {
-    width: 28vw;
-    height: 28vw;
-    background: #E5011C;
+.aboutus__authors__we__third__tr,
+.aboutus__authors__we__fifth__cur {
+    right: -11vw;
+    top: -12vw;
+}
+.aboutus__authors__we__second__curcle,
+.aboutus__authors__we__fourth__par {
+    right: -11vw;
+    bottom: -9vw;
 }
 .aboutus__authors__we__second__curcle {
     border-radius: 50%;
-}
-.aboutus__authors__we__third__tr {
-
 }
 .aboutus__authors__we__fourth__par {
-    width: 32vw;
-    height: 28vw;
-    background: #E5011C;
+    width: 30vw;
+    height: 24vw;
 }
 .aboutus__authors__we__fifth__cur {
-    width: 32vw;
-    height: 28vw;
+    width: 30vw;
+    height: 24vw;
     border-radius: 50%;
-    background: #E5011C;
 }
 
 
