@@ -8,10 +8,11 @@
 }
 body {
     font-family: 'Helvetica',sans-serif;
+    width: 100%;
 }
 h1, 
 h2 {
-    font-size: 72px;
+    font-size: 17vw;
     font-weight: 700;
 }
 
@@ -46,15 +47,27 @@ h2 {
     content: '';
     top: 8px;
 }
+.hero__header:hover {
+ transform: rotate(45deg);
+}
+.hero__header::before:hover {
+ transform: rotate(-45deg);
+ top: 0px;
+}
+.hero__header::after:hover {
+    top: 0px;
+    transform: rotate(-85deg);
+}
 .hero__header__block {
     display: none;
 }
 .hero__date {
     transform: rotate(-90deg);
+    font-size: 5.5vw;
 }
 .hero__square {
-    width: 146px;
-    height: 76px;
+    width: 45%;
+    height: 11%;
     background-color: #E5011C;
     position: absolute;
     top: 0;
@@ -67,10 +80,10 @@ h2 {
     margin-left: -2%;
 }
 .hero__title__text:last-of-type {
-    margin-left: 22%;
+    margin-left: 41%;
 }
 .hero__down__circle {
-    width: 229px;
+    width: 60%;
     height: 230px;
     border-radius: 50%;
     background-color: #E5011C;
@@ -78,7 +91,10 @@ h2 {
 .hero__down__link {
     text-decoration: none;
     color: black;
-    font-size: 12px;
+    font-size: 5.5vw;
+}
+.hero__down__link:hover {
+    text-decoration: underline;
 }
 .hero__down {
     display: flex;
@@ -96,12 +112,11 @@ h2 {
 }
 .aboutus__info__title{
     font-weight: bold;
-    font-size: 72px;
     margin-bottom: 11vw;
     margin-top: 20vw;
 }
 .aboutus__info__p {
-    font-size: 14px;
+    font-size: 4vw;
     margin-bottom: 7vw;
 }
 hr {
@@ -151,16 +166,20 @@ hr {
     left: -1%;
 }
 .aboutus__authors__we li div {
-    width: 28vw;
-    height: 28vw;
     background-color: #E5011C;
     position: absolute;
 }
 .aboutus__authors__we__first__square,
 .aboutus__authors__we__third__tr,
 .aboutus__authors__we__fifth__cur {
+    width: 45%;
+    height: 45%;
     right: -11vw;
     top: -12vw;
+}
+.aboutus__authors__we__second__curcle {
+    width: 45%;
+    height: 45%;
 }
 .aboutus__authors__we__second__curcle,
 .aboutus__authors__we__fourth__par {
@@ -171,12 +190,12 @@ hr {
     border-radius: 50%;
 }
 .aboutus__authors__we__fourth__par {
-    width: 30vw;
-    height: 24vw;
+    width: 55%;
+    height: 45%;
 }
 .aboutus__authors__we__fifth__cur {
-    width: 30vw;
-    height: 24vw;
+    width: 55%;
+    height: 45%;
     border-radius: 50%;
 }
 
