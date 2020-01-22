@@ -103,6 +103,28 @@ h2 {
 }
 
 
+/*quote*/ 
+
+.quote {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #E5011C 60%, black 40%);
+}
+.quote__block {
+    background-color: white;
+    width: 90%;
+}
+.quote__block__title {
+    color: #E5011C;
+    padding: 7%;
+    padding-right: 12%;
+}
+.quote__tr {
+    border: 50px solid transparent; 
+    border-left: 50px solid white; 
+    border-top: 0px solid white;
+}
+
 
 /*we*/ 
 
@@ -145,6 +167,42 @@ hr {
     width: 221px;
     height: 221px;
 }
+.aboutus__authors__we li div {
+    position: absolute;
+}
+.aboutus__authors__we__text__first,
+.aboutus__authors__we__text__second,
+.aboutus__authors__we__text__third,
+.aboutus__authors__we__text__fourth,
+.aboutus__authors__we__text__fifth {
+    width: 221px;
+    height: 221px;
+    opacity: 0;
+    top: 0;
+}
+.aboutus__authors__we__text__first:hover,
+.aboutus__authors__we__text__second:hover,
+.aboutus__authors__we__text__third:hover,
+.aboutus__authors__we__text__fourth:hover,
+.aboutus__authors__we__text__fifth:hover {
+    opacity: 1;
+    background: rgba(20, 20, 20, 0.7);
+    color: white;
+    font-size: 4vw;
+    transition: .3s;
+}
+.aboutus__authors__we__text__first__parag,
+.aboutus__authors__we__text__third__parag,
+.aboutus__authors__we__text__fifth__parag,
+.aboutus__authors__we__text__second__parag,
+.aboutus__authors__we__text__fourth__parag {
+    width: 70%;
+}
+.aboutus__authors__we__text__second__parag,
+.aboutus__authors__we__text__fourth__parag {
+    position: absolute;
+    bottom: 0;
+}
 .aboutus__authors__we li h4 {
     font-size: 24px;
     line-height:  96%;
@@ -165,17 +223,17 @@ hr {
     top: -1%;
     left: -1%;
 }
-.aboutus__authors__we li div {
-    background-color: #E5011C;
-    position: absolute;
-}
 .aboutus__authors__we__first__square,
 .aboutus__authors__we__third__tr,
 .aboutus__authors__we__fifth__cur {
+    z-index: 1;
     width: 45%;
     height: 45%;
     right: -11vw;
     top: -12vw;
+}
+.aboutus__authors__we__first__square {
+    background-color: #E5011C;
 }
 .aboutus__authors__we__second__curcle {
     width: 45%;
@@ -183,20 +241,30 @@ hr {
 }
 .aboutus__authors__we__second__curcle,
 .aboutus__authors__we__fourth__par {
+    z-index: 1;
     right: -11vw;
     bottom: -9vw;
+    background-color: #E5011C;
 }
 .aboutus__authors__we__second__curcle {
     border-radius: 50%;
+}.aboutus__authors__we__third__tr {
+    width: 0;
+    height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #E5011C;
 }
 .aboutus__authors__we__fourth__par {
     width: 55%;
     height: 45%;
+    background-color: #E5011C;
 }
 .aboutus__authors__we__fifth__cur {
     width: 55%;
     height: 45%;
     border-radius: 50%;
+    background-color: #E5011C;
 }
 
 
