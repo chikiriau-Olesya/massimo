@@ -158,7 +158,6 @@ h2 {
     position: relative;
     font-weight: lighter;
     font-size: 14px;
-    border-bottom: 1px solid #FFFFFF;
     margin: 30px 0;
     z-index: 1;
 }
@@ -231,16 +230,21 @@ h2 {
 
 .content .stroke {
     position: absolute;
-    border-bottom: 1px solid #FFFFFF;
     line-height: 2px;
     font-size: 13px;
     font-weight: bold;
     z-index: 2;
 }
+
+.content .stroke p {
+    text-decoration: underline;
+}
+
 .content .stroke.right,
 .content .stroke.left {
     padding-bottom: 10px;
 }
+
 .content .stroke.right {
     margin-top: 250px;
     margin-left: 180px;
@@ -487,7 +491,10 @@ h2 {
 }
 
 @media (min-width: 1440px) {
-
+   h1,
+   h2 {
+    font-size: 15vw;
+   }
   /*ПРИВЕТСТВЕННАЯ СТРАНИЦА*/
 
   .hero__date {
@@ -508,18 +515,18 @@ h2 {
   }
 
   .hero__header div {
-     margin-top: 1vw;
+    margin-top: 1vw;
   }
 
   .hero__header__block {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .hero__header__block__link {
+   .hero__header__block__link {
         margin-left: 4vw;
-    }
+  }
 
     .hero__header__block__link,
     .hero__header__block__items__link  {
@@ -554,12 +561,16 @@ h2 {
 
     .hero__square {
         width: 29vw;
-        height: 12vw;
+        height: 7vw;
         top: 5vw;
     }
 
     .hero__title {
-        margin-top: 15%;
+        margin-top: 9%;
+    }
+
+    .hero__title__text:last-of-type {
+        margin-left: 47%;
     }
 
     .hero__down__circle {
@@ -574,33 +585,38 @@ h2 {
     }
 
     .hero__down__link {
+        transform: rotate(0deg);
         font-size: 1vw;
-        margin-top: 9vw;
+        margin-top: 7vw;
         margin-left: 28vw;
     }
 
     .hero__down__arrow {
         display:block;
-        margin-top: -2vw;
+        margin-top: -7vw;
         margin-left: -3.8vw;
     }
 
     /* bio*/
+    
+    .bio {
+        margin-top: -9vw;
+    }
 
     .bio h2 {
-        font-size: 360px;
         margin-top: 40px;
         margin-left: 40px;
     }
 
     .content .text {
-        font-size: 55px;
+        font-size: 2vw;
         border-bottom: 2px solid #FFFFFF;
         margin: 40px 0;
     }
 
     .content .text p {
         padding: 0 50px;
+        padding-bottom: 40px;
     }
 
     .content .text.left {
@@ -609,14 +625,15 @@ h2 {
 
     .content .text.left p {
         padding-left: 150px;
+        padding-right: 23%;
     }
 
     .content .text.right {
-        margin-left: 150px;
+        margin-left: 20%;
     }
 
     .content .text.right p {
-        padding-right: 150px;
+        padding-right: 20%;
     }
 
     .photo img {
@@ -629,7 +646,6 @@ h2 {
     }
 
     .content .stroke {
-        border-bottom: 2px solid #FFFFFF;
         font-size: 50px;
     }
 
@@ -642,7 +658,7 @@ h2 {
         margin-top: 1379px;
         margin-left: 150px;
     }
-  
+
     /* О НАС*/
 
     .aboutus {
@@ -697,7 +713,7 @@ h2 {
     }
 
     .aboutus__authors__we li {
-      margin-right: 9.5vw;
+        margin-right: 9.5vw;
     }
 
     .aboutus__authors__we__text__first,
@@ -714,8 +730,8 @@ h2 {
     .aboutus__authors__we__text__third:hover,
     .aboutus__authors__we__text__fourth:hover,
     .aboutus__authors__we__text__fifth:hover {
-      font-size: 2vw;
-      line-height: 2.4vw;
+        font-size: 2vw;
+        line-height: 2.4vw;
     }
 
     .aboutus__authors__we__text__first__parag,
@@ -726,10 +742,16 @@ h2 {
         width: 43%;
     }
 
+    .aboutus__authors__we__third__tr {
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 130px solid #E5011C;
+    }
+
     /*ПОДВАЛ*/
 
     .footer__title {
-      margin-top: 4vw;
+        margin-top: 4vw;
     }
 
     .footer__list__item__link {
@@ -737,13 +759,13 @@ h2 {
     }
 
     .footer__list {
-      width: 36vw;
-      margin-top: 2vw;
-      margin-left: 1vw;
+        width: 36vw;
+        margin-top: 2vw;
+        margin-left: 1vw;
     }
 
     .footer__list__item__link:hover {
-      text-decoration: underline;
+        text-decoration: underline;
     }
 
     .footer__doptext h4 {
@@ -754,7 +776,7 @@ h2 {
         margin-left: 78vw;
         line-height: 1.8vw;
     }
-    
+
     .footer__doptext h4:hover {
         text-decoration: underline;
     }
