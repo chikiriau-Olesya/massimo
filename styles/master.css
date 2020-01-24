@@ -293,7 +293,6 @@ h2 {
   .artworks {
     position: relative;
     overflow-x: hidden;
-    height: 560vw;
   }
   
   .circles_group {
@@ -302,7 +301,7 @@ h2 {
   
   .artworks_header {
     width: 100%;
-    height: 100vw;
+    height: 130vw;
     background-color: black;
     font-family: helvetica, sans-serif;
   }
@@ -752,7 +751,7 @@ h2 {
   @media (min-width: 1024px) {
   
     .artworks_header {
-      height: 60vw;
+      height: 40vw;
     }
   
    .artworks_header_comp img:first-child{
@@ -800,14 +799,6 @@ h2 {
       top: 440px;
     }
   
-  
-    .artworks_header_comp h2 span{
-      position: absolute;
-      color: var(--red);
-      font-weight: bold;
-      text-decoration: none;
-      z-index: 2;
-    }
     .artworks_header_comp h2 span:first-child{
       left: 12%;
       top: 230px;
@@ -866,37 +857,36 @@ h2 {
     top: 45vw;
     left: 1.4vw;
   }
-  
-  @media (min-width: 1024px) {
-    .collection {
-      height: 70vw;
-      flex-direction: row;
-    }
-  
-    .artworks h2 {
-      font-size: 8vw;
-    }
-  
-    .collection_art, .space_holder, .collection_art img:first-child {
-      width: 14vw;
-      height: 14vw;
-    }
-  
-    .space_holder {
-      display: none;
-    }
-  
-    .collection_art:hover img:nth-child(2) {
-      width: 45vw;
-      top: 5vw;
-      left: 24vw;
-    }
+  .collection {
+    height: 70vw;
+    flex-direction: row;
   }
+
+  .artworks h2 {
+    font-size: 8vw;
+  }
+
+  .collection_art, .space_holder, .collection_art img:first-child {
+    width: 14vw;
+    height: 14vw;
+  }
+
+  .space_holder {
+    display: none;
+  }
+
+  .collection_art:hover img:nth-child(2) {
+    width: 45vw;
+    top: 5vw;
+    left: 24vw;
+  }
+  
 @media (min-width: 1440px) {
    h1,
    h2 {
     font-size: 15vw;
    }
+
   /*ПРИВЕТСТВЕННАЯ СТРАНИЦА*/
 
   .hero__date {
@@ -1002,74 +992,95 @@ h2 {
     /* bio*/
     
     .bio {
-        margin-top: -9vw;
+      margin-top: -9vw;
+      padding-top: 6%;
     }
 
     .bio h2 {
-        margin-top: 40px;
-        margin-left: 40px;
+       margin-top: 40px;
+      margin-left: 40px;
     }
 
     .content .text {
-        font-size: 2vw;
-        border-bottom: 2px solid #FFFFFF;
-        margin: 40px 0;
+      font-size: 2vw;
+      border-bottom: 2px solid #FFFFFF;
+      margin: 40px 0;
     }
 
     .content .text p {
-        padding: 0 50px;
-        padding-bottom: 40px;
+      padding: 0 50px;
+      padding-bottom: 40px;
     }
 
     .content .text.left {
-        margin-right: 150px;
+      margin-right: 150px;
     }
 
     .content .text.left p {
-        padding-left: 150px;
-        padding-right: 23%;
+       padding-left: 150px;
+      padding-right: 23%;
     }
 
     .content .text.right {
-        margin-left: 20%;
+      margin-left: 20%;
     }
 
     .content .text.right p {
-        padding-right: 20%;
+      padding-right: 20%;
     }
 
     .photo img {
-        margin-top: 500px;
-        margin-bottom: 100px;
+      margin-top: 300px;
+      width: 50%;
+      margin-bottom: 60px;
     }
 
     .content .figure{
-        margin-top: 200px;
+      margin-top: 90px;
+    }
+
+    .content .figure.one {
+      width: 25vw;
+      height: 25vw;
+      margin-left: 38vw;
+    }
+
+    .figure.two {
+      width: 25vw;
+      height: 25vw;
+      margin-left: 40vw;
+    }
+
+    .figure.three {
+      margin-left: 40vw;
+      border-left: 10vw solid transparent;
+      border-right: 10vw solid transparent;
+      border-bottom: 20vw solid white;
     }
 
     .content .stroke {
-        font-size: 50px;
+      font-size: 50px;
     }
 
     .content .stroke.right {
-        margin-top: 1230px;
-        margin-left: 830px;
+      margin-top: 800px;
+      margin-left: 530px;
     }
 
     .content .stroke.left {
-        margin-top: 1379px;
-        margin-left: 150px;
+      margin-top: 879px;
+      margin-left: 250px;
     }
 
     /* О НАС*/
 
     .aboutus {
-        margin-left: 4vw;
+      margin-left: 4vw;
     }
 
     .aboutus__info__title {
-        margin-bottom: 5vw;
-        font-size: 19vw;
+      margin-bottom: 5vw;
+      font-size: 19vw;
     }
 
     .aboutus__info__p {
