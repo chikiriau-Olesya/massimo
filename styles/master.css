@@ -10,6 +10,7 @@
 body {
     font-family: 'Helvetica',sans-serif;
     width: 100%;
+    overflow-x: hidden;
 }
 
 h1,
@@ -454,6 +455,26 @@ h2 {
     transition: 0.1s ease;
     cursor: pointer;
   }
+
+
+.video {
+  text-align: center;
+  position: relative;
+  padding-bottom: 44.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  background: black;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  margin: 0 auto;
+  width: 60%;
+  height: 72%;
+}
   
 /*we*/
 
@@ -1070,6 +1091,25 @@ h2 {
     .content .stroke.left {
       margin-top: 879px;
       margin-left: 250px;
+    }
+
+    .video {
+      text-align: center;
+      position: relative;
+      padding-bottom: 44.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+      background: black;
+    }
+
+    .video iframe {
+      position: absolute;
+      top: 0;
+      left: 20%;
+      margin: 0 auto;
+      width: 60%;
+      height: 72%;
     }
 
     /* О НАС*/
