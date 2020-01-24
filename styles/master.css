@@ -282,6 +282,7 @@ h2 {
 }
 
 /*Работы*/
+
 .artworks {
     margin-top: -1px;
     background-color: black;
@@ -455,7 +456,52 @@ h2 {
     transition: 0.1s ease;
     cursor: pointer;
   }
+ /* Часть с  кругами */
+  
+ .artworks h2 {
+  font-size: 14vw;
+  margin: 25vw 0 11vw;
+}
 
+.collection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 190vw;
+  margin: -2vw;
+}
+
+.collection_art,
+.space_holder {
+  margin: 2vw;
+}
+
+.collection_art,
+.space_holder,
+.collection_art img:first-child {
+  width: 25vw;
+  height: 25vw;
+}
+
+.space_holder {
+  opacity: 0%;
+}
+
+.collection_art img:nth-child(2) {
+  display: none;
+}
+
+.collection_art:hover img:nth-child(2) {
+  display: block;
+  width: 84.9vw;
+  position: absolute;
+  top: 45vw;
+  left: 1.4vw;
+}
+
+/*video*/
 
 .video {
   text-align: center;
@@ -713,7 +759,7 @@ h2 {
     top: 320px;
     }
 
-    .artworks_header_comp img:nth-child(4) 
+    .artworks_header_comp img:nth-child(4) {
     width: 24%;
     height: auto;
     left: 30%;
@@ -770,7 +816,7 @@ h2 {
     }
   }
   @media (min-width: 1024px) {
-  
+
     .artworks_header {
       height: 40vw;
     }
@@ -832,76 +878,31 @@ h2 {
       top: 490px;
       left: 63%;
     }
-  }
-  
-  /* Часть с  кругами */
-  
-  .artworks h2 {
-    font-size: 14vw;
-    margin: 25vw 0 11vw;
-  }
-  
-  .collection {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 190vw;
-    margin: -2vw;
-  }
-  
-  .collection_art,
-  .space_holder {
-    margin: 2vw;
-  }
-  
-  .collection_art,
-  .space_holder,
-  .collection_art img:first-child {
-    width: 25vw;
-    height: 25vw;
-  }
-  
-  .space_holder {
-    opacity: 0%;
-  }
-  
-  .collection_art img:nth-child(2) {
-    display: none;
-  }
-  
-  .collection_art:hover img:nth-child(2) {
-    display: block;
-    width: 84.9vw;
-    position: absolute;
-    top: 45vw;
-    left: 1.4vw;
-  }
-  .collection {
-    height: 70vw;
-    flex-direction: row;
+    .collection {
+      height: 70vw;
+      flex-direction: row;
+    }
+    
+    .artworks h2 {
+      font-size: 8vw;
+    }
+    
+    .collection_art, .space_holder, .collection_art img:first-child {
+      width: 14vw;
+      height: 14vw;
+    }
+    
+    .space_holder {
+      display: none;
+    }
+    
+    .collection_art:hover img:nth-child(2) {
+      width: 45vw;
+      top: 5vw;
+      left: 24vw;
+    }
   }
 
-  .artworks h2 {
-    font-size: 8vw;
-  }
-
-  .collection_art, .space_holder, .collection_art img:first-child {
-    width: 14vw;
-    height: 14vw;
-  }
-
-  .space_holder {
-    display: none;
-  }
-
-  .collection_art:hover img:nth-child(2) {
-    width: 45vw;
-    top: 5vw;
-    left: 24vw;
-  }
-  
 @media (min-width: 1440px) {
    h1,
    h2 {
