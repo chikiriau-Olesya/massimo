@@ -19,10 +19,16 @@ h2 {
     font-weight: 700;
 }
 
+.wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
 /*ПРИВЕТСТВЕННАЯ СТРАНИЦА*/
 
 .hero {
     position: relative;
+    overflow-x: hidden;
 }
 
 .hero__header__menu {
